@@ -6,7 +6,7 @@ metadata:
   labels: 
     app: frontend-app
 spec:
-  replicaCount: {{.values.replicaCount}}
+  replicaCount: 2
   selector:
    matchLabels:
     app: frontend
@@ -17,7 +17,7 @@ spec:
       spec:
         containers:
           - name: frontend_app
-            image: "{{.values.image.repository}}:{{.values.image.tag}}"
+            image: chandrumm/pharnaapp:9c1aa4a26569
             imagePullPolicy: IfNotPresent
             ports:
               containerPort: 5000
