@@ -16,8 +16,8 @@ spec:
         app: frontend
       spec:
         containers:
-          - name: frontend_app
+          - name: frontend-app
             image: chandrumm/pharnaapp:15
             imagePullPolicy: IfNotPresent
             ports:
-              containerPort: 5000
+            - containerPort: 5000
