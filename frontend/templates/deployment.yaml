@@ -1,0 +1,23 @@
+appVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-app
+  namespace: dev
+  labels: 
+    app: frontend-app
+spec:
+  replicaCount: {{.values.replicaCount}}
+  selector:
+   matchLabels:
+    app: frontend
+  template:
+    spec:
+      labels:
+        app: frontend
+      spec:
+        containers:
+          - name: frontend_app
+            image: "{{.values.image.repository}}:{{.values.image.tag}}"
+            imagePullPolicy: IfNotPresent
+            ports:
+              containerPort: 5000

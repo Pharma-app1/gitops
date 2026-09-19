@@ -1,0 +1,17 @@
+replicaCount: 1
+
+# This sets the container image more information can be found here: https://kubernetes.io/docs/concepts/containers/images/
+image:
+  repository: chandrumm/pharnaapp
+  tag: 9c1aa4a26569
+
+
+  
+
+
+
+
+
+
+
+
