@@ -17,7 +17,7 @@ spec:
       spec:
         containers:
           - name: frontend-app
-            image: chandrumm/pharnaapp:15
+            image: {{ .Values.image.repository }}:{{.Values.image.tag }}
             imagePullPolicy: IfNotPresent
             ports:
             - containerPort: 5000
