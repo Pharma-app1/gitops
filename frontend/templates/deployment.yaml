@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: frontend-app
-          image: chandrumm/pharnaapp:sha-4288ed1
+          image: chandrumm/pharnaapp:sha-fb7001c
           imagePullPolicy: IfNotPresent
           ports:
           - containerPort: 80
