@@ -14,10 +14,10 @@ spec:
     metadata:
       labels:
         app: frontend
-      spec:
-        containers:
-          - name: frontend-app
-            image: chandrumm/pharnaapp:sha-4288ed1
-            imagePullPolicy: IfNotPresent
-            ports:
-            - containerPort: 5000
+    spec:
+      containers:
+        - name: frontend-app
+          image: chandrumm/pharnaapp:sha-4288ed1
+          imagePullPolicy: IfNotPresent
+          ports:
+          - containerPort: 5000
