@@ -1,4 +1,4 @@
 replicaCount: 2
 image:
   repository: chandrumm/pharnaapp
-  tag: sha-32511d8
+  tag: sha-fb7001c
