@@ -20,4 +20,4 @@ spec:
           image: chandrumm/pharnaapp:sha-4288ed1
           imagePullPolicy: IfNotPresent
           ports:
-          - containerPort: 5000
+          - containerPort: 80
